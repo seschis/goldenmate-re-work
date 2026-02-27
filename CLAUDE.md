@@ -41,9 +41,18 @@ Stock OpenOCD (v0.12.0) fails with `Cortex-M PARTNO 0xc30 is unrecognized`; a pa
 - Monitoring RS485 and UART4 signals with logic analyzer during boot
 - Understanding internal flash type (NOR vs NAND) for proper OpenOCD read commands
 
+## Repository Structure
+
+```
+images/          - Annotated photos (e.g. pcb-layout-markup.jpg)
+docs/            - Markdown notes (GitHub-flavored)
+diagrams/        - Mermaid diagrams and original Excalidraw sources
+```
+
 ## File Conventions
 
-- Notes use **Obsidian markdown** with `![[wikilink]]` syntax for images and Excalidraw embeds
-- Task tracking uses Obsidian checkbox format: `- [ ]` / `- [x]` with date stamps
-- `PCB-layout-markup.jpg` is the annotated board photo referenced by `GoldenMate PCB Overview.md`
-- `rs485-trace-mapping.excalidraw.md` contains the signal path diagram
+- Notes use **GitHub-flavored markdown** with standard `![alt](path)` image syntax
+- Task tracking uses checkbox format: `- [ ]` / `- [x]` with date stamps
+- `images/pcb-layout-markup.jpg` is the annotated board photo referenced by `docs/pcb-overview.md`
+- `diagrams/rs485-signal-path.md` contains the mermaid signal path diagram
+- `diagrams/rs485-trace-mapping.excalidraw.md` is the original Excalidraw source (for reference)

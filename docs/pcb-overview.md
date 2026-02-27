@@ -1,5 +1,5 @@
 Labeled PCB v2
-![[PCB-layout-markup.jpg]]
+![Labeled PCB](../images/pcb-layout-markup.jpg)
 
 BMS MCU/SoC: FM33LC026N
 rs485 controller: 
@@ -37,7 +37,7 @@ cf413nn
 
 ## WIP of pin tracing of 485 to SoC.
 
-![[rs485-trace-mapping.excalidraw]]
+See [RS485 Signal Path Diagram](../diagrams/rs485-signal-path.md)
 
 
 
@@ -58,7 +58,7 @@ https://www.instructables.com/CH341A-Programmer/
 
 ### Stuff to do for OpenOCD/SWD
 
-See data from [[ST-LINK DBG Session]]
+See data from [ST-LINK Debug Session](stlink-debug-session.md)
 
 * target cpu needs to be defined.  its a cortex_m (m0) but says the manufacturer is ARM where as most chips online use STM as the manufacturer.  I'm not seeing any defined target files for this particular part so I may need to make a target file for it.  I think I can do this from the ARM documentation on the chip, but I'm not sure what needs to be defined yet.
 * Internal Flash needs to be defined.  Perhaps I can get this data from Fudan or the datasheet of the SoC.  There is likely internal flash, and an external eeprom chip for the initial loader. The external EEPROM is defined in a "board configuration" file for OpenOCD.  The Internal Flash is defined in the "target configuration" for OpenOCD.
