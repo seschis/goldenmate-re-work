@@ -43,18 +43,18 @@ Stock OpenOCD (v0.12.0) fails with `Cortex-M PARTNO 0xc30 is unrecognized`; a pa
 
 ## Datasheets
 
-The `datasheets/` directory contains component datasheets. The `datasheets/mcu-data/` subdirectory has chapter-level extracts from the FM33LC026N datasheet, many translated from Chinese to English. Key references for RE work:
+The `datasheets/` directory contains component datasheets organized by functional role on the board. Key references for RE work:
 
-- `datasheets/mcu-data/debug-english.pdf` — SWD debug interface details
-- `datasheets/mcu-data/Dedicated-Programming_interface-english.pdf` — Programming interface
-- `datasheets/mcu-data/7_bus_and_storage-english.PDF` — Bus architecture, memory map, flash organization
-- `datasheets/mcu-data/11.12_registers-english.PDF` — Peripheral register definitions
-- `datasheets/mcu-data/pin-description-english.pdf` — Pin alternate functions
-- `datasheets/mcu-data/i2c-english.pdf` — I2C peripheral (relevant for EEPROM communication)
-- `datasheets/mcu-data/uart-english.pdf` — UART peripheral
-- `datasheets/mcu-data/basic-flash.pdf` — Flash memory basics
-- `datasheets/BL24C512A-PARC_C111332.pdf` — BL24C512A EEPROM datasheet
-- `datasheets/pdfcoffee.com_sh367309-ev12a-pdf-free.pdf` — SH367309 BMS ASIC datasheet
+- `datasheets/mcu/chapters-english/debug.pdf` — SWD debug interface details
+- `datasheets/mcu/chapters-english/programming-interface.pdf` — Programming interface
+- `datasheets/mcu/chapters-english/bus-and-storage.PDF` — Bus architecture, memory map, flash organization
+- `datasheets/mcu/chapters-english/registers.PDF` — Peripheral register definitions
+- `datasheets/mcu/chapters-english/pin-description.pdf` — Pin alternate functions
+- `datasheets/mcu/chapters-english/i2c.pdf` — I2C peripheral (relevant for EEPROM communication)
+- `datasheets/mcu/chapters-english/uart.pdf` — UART peripheral
+- `datasheets/mcu/chapters/flash.pdf` — Flash memory basics
+- `datasheets/eeprom/BL24C512A.pdf` — BL24C512A EEPROM datasheet
+- `datasheets/bms-asic/SH367309.pdf` — SH367309 BMS ASIC datasheet
 
 ## Repository Structure
 
@@ -62,7 +62,7 @@ The `datasheets/` directory contains component datasheets. The `datasheets/mcu-d
 images/          - Annotated photos (e.g. pcb-layout-markup.jpg)
 docs/            - Markdown notes (GitHub-flavored)
 diagrams/        - Mermaid diagrams and original Excalidraw sources
-datasheets/      - Component datasheets (Chinese-to-English MCU translations in mcu-data/)
+datasheets/      - Component datasheets organized by board function (mcu/, bms-asic/, eeprom/, power/, interface/, discretes/, tools/)
 ```
 
 ## File Conventions

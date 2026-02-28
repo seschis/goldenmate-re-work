@@ -1,58 +1,87 @@
 # Datasheets
 
-Component datasheets for the GoldenMate BMS. Many of the FM33LC026N MCU documents were originally in Chinese and have been translated to English.
+Component datasheets for the GoldenMate BMS, organized by functional role on the board.
 
 ## MCU — FM33LC026N (Fudan Microelectronics)
 
-The `mcu-data/` subdirectory contains chapter-level extracts from the FM33LC026N datasheet. Where available, both the original Chinese PDF and an English translation are included.
+Top-level reference documents for the ARM Cortex-M0 SoC:
 
 | Document | Description |
 |----------|-------------|
-| [mcu-data/6_cpu-english.PDF](mcu-data/6_cpu-english.PDF) | CPU core description (Cortex-M0) |
-| [mcu-data/7_bus_and_storage-english.PDF](mcu-data/7_bus_and_storage-english.PDF) | Bus architecture and memory/storage |
-| [mcu-data/11.12_registers-english.PDF](mcu-data/11.12_registers-english.PDF) | Peripheral register definitions |
-| [mcu-data/debug-english.pdf](mcu-data/debug-english.pdf) | Debug interface (SWD) |
-| [mcu-data/Dedicated-Programming_interface-english.pdf](mcu-data/Dedicated-Programming_interface-english.pdf) | Dedicated programming interface |
-| [mcu-data/pin-description-english.pdf](mcu-data/pin-description-english.pdf) | Pin descriptions and alternate functions |
-| [mcu-data/package-pinout.pdf](mcu-data/package-pinout.pdf) | Package pinout diagram |
-| [mcu-data/specs.pdf](mcu-data/specs.pdf) | Electrical specifications |
-| [mcu-data/basic-flash.pdf](mcu-data/basic-flash.pdf) | Flash memory basics |
-| [mcu-data/i2c-english.pdf](mcu-data/i2c-english.pdf) | I2C peripheral |
-| [mcu-data/spi-english.pdf](mcu-data/spi-english.pdf) | SPI peripheral |
-| [mcu-data/uart-english.pdf](mcu-data/uart-english.pdf) | UART peripheral |
-| [mcu-data/lpuart-english.pdf](mcu-data/lpuart-english.pdf) | Low-power UART peripheral |
+| [mcu/cortex-m0-reference-english.pdf](mcu/cortex-m0-reference-english.pdf) | ARM Cortex-M0 reference (English TOC) |
+| [mcu/cortex-m0-reference.PDF](mcu/cortex-m0-reference.PDF) | Full Cortex-M0 SoC datasheet (Chinese) |
 
-Original Chinese versions (`i2c.pdf`, `spi.pdf`, `uart.pdf`, `lpuart.pdf`, `pin-description.pdf`, `debug.pdf`, `Dedicated-Programming_interface.pdf`) are also in `mcu-data/`.
-
-## ARM Cortex-M0 Reference
+### Chapter Extracts — English Translations (`mcu/chapters-english/`)
 
 | Document | Description |
 |----------|-------------|
-| [ARMCORTEX-M0-_2020-10-22-toc-english.pdf](ARMCORTEX-M0-_2020-10-22-toc-english.pdf) | ARM Cortex-M0 reference — English table of contents |
-| [ARMCORTEX-M0,..._2020-10-22.PDF](ARMCORTEX-M0,1.8V_5.5V,低功耗,32位_2020-10-22.PDF) | Full Cortex-M0 SoC datasheet (Chinese) |
+| [cpu.PDF](mcu/chapters-english/cpu.PDF) | CPU core description |
+| [bus-and-storage.PDF](mcu/chapters-english/bus-and-storage.PDF) | Bus architecture and memory/storage |
+| [registers.PDF](mcu/chapters-english/registers.PDF) | Peripheral register definitions |
+| [debug.pdf](mcu/chapters-english/debug.pdf) | Debug interface (SWD) |
+| [programming-interface.pdf](mcu/chapters-english/programming-interface.pdf) | Dedicated programming interface |
+| [pin-description.pdf](mcu/chapters-english/pin-description.pdf) | Pin descriptions and alternate functions |
+| [i2c.pdf](mcu/chapters-english/i2c.pdf) | I2C peripheral |
+| [spi.pdf](mcu/chapters-english/spi.pdf) | SPI peripheral |
+| [uart.pdf](mcu/chapters-english/uart.pdf) | UART peripheral |
+| [lpuart.pdf](mcu/chapters-english/lpuart.pdf) | Low-power UART peripheral |
 
-## BMS ASIC — SH367309
-
-| Document | Description |
-|----------|-------------|
-| [pdfcoffee.com_sh367309-ev12a-pdf-free.pdf](pdfcoffee.com_sh367309-ev12a-pdf-free.pdf) | SH367309 BMS ASIC datasheet |
-| [mcu-data/pdfcoffee.com_sh367309-ev12a-pdf-free.pdf](mcu-data/pdfcoffee.com_sh367309-ev12a-pdf-free.pdf) | SH367309 (duplicate copy in mcu-data) |
-
-## Other Components
-
-| Document | Description |
-|----------|-------------|
-| [BL24C512A-PARC_C111332.pdf](BL24C512A-PARC_C111332.pdf) | BL24C512A 512Kbit I2C EEPROM |
-| [ca-is3721hs.pdf](ca-is3721hs.pdf) | CA-IS3721HS digital isolator |
-| [chipanalog_cais3721hs_Lcs01_link (1).pdf](<chipanalog_cais3721hs_Lcs01_link (1).pdf>) | CA-IS3721HS alternate/detailed datasheet |
-| [Datasheet_TP8485E.pdf](Datasheet_TP8485E.pdf) | 3PEAK TP8485E RS485 transceiver |
-| [SS027N08LS.pdf](SS027N08LS.pdf) | SS027N08LS MOSFET |
-| [SA6 Datasheet.pdf](<SA6 Datasheet.pdf>) | SA6 (logic analyzer / related tool) |
-
-## CH341A/B Programmer
+### Chapter Extracts — Chinese Originals (`mcu/chapters/`)
 
 | Document | Description |
 |----------|-------------|
-| [WCH CH341A - Datasheet.pdf](<WCH CH341A - Datasheet.pdf>) | CH341A USB programmer datasheet |
-| [CH341DS1.PDF](CH341DS1.PDF) | CH341 detailed datasheet (Chinese) |
-| [CH341B-Programer.pdf](CH341B-Programer.pdf) | CH341B programmer documentation |
+| [debug.pdf](mcu/chapters/debug.pdf) | Debug interface |
+| [programming-interface.pdf](mcu/chapters/programming-interface.pdf) | Dedicated programming interface |
+| [pin-description.pdf](mcu/chapters/pin-description.pdf) | Pin descriptions |
+| [flash.pdf](mcu/chapters/flash.pdf) | Flash memory basics |
+| [package-pinout.pdf](mcu/chapters/package-pinout.pdf) | Package pinout diagram |
+| [specs.pdf](mcu/chapters/specs.pdf) | Electrical specifications |
+| [i2c.pdf](mcu/chapters/i2c.pdf) | I2C peripheral |
+| [spi.pdf](mcu/chapters/spi.pdf) | SPI peripheral |
+| [uart.pdf](mcu/chapters/uart.pdf) | UART peripheral |
+| [lpuart.pdf](mcu/chapters/lpuart.pdf) | Low-power UART peripheral |
+
+## BMS ASIC — SH367309 (`bms-asic/`)
+
+| Document | Description |
+|----------|-------------|
+| [SH367309.pdf](bms-asic/SH367309.pdf) | SH367309 BMS ASIC datasheet |
+
+## External EEPROM — BL24C512A (`eeprom/`)
+
+| Document | Description |
+|----------|-------------|
+| [BL24C512A.pdf](eeprom/BL24C512A.pdf) | BL24C512A 512Kbit I2C EEPROM |
+| [BL24C512A_v1.97_en.pdf](eeprom/BL24C512A_v1.97_en.pdf) | BL24C512A v1.97 English datasheet |
+
+## Power Regulators (`power/`)
+
+| Document | Description |
+|----------|-------------|
+| [FN1-05S05AN.pdf](power/FN1-05S05AN.pdf) | AIPULNION FN1-05S05AN DC-DC module |
+| [XL7015E1.PDF](power/XL7015E1.PDF) | XLSEMI XL7015E1 buck converter |
+| [XL7015E1-translated.pdf](power/XL7015E1-translated.pdf) | XL7015E1 translated to English |
+
+## RS485 Interface Path (`interface/`)
+
+| Document | Description |
+|----------|-------------|
+| [CA-IS3721HS.pdf](interface/CA-IS3721HS.pdf) | CA-IS3721HS digital isolator |
+| [CA-IS3721HS-detailed.pdf](interface/CA-IS3721HS-detailed.pdf) | CA-IS3721HS detailed/alternate datasheet |
+| [TP8485E.pdf](interface/TP8485E.pdf) | 3PEAK TP8485E RS485 transceiver |
+| [VBE2102M.pdf](interface/VBE2102M.pdf) | VBsemi VBE2102M ESD protection |
+
+## Discrete Components (`discretes/`)
+
+| Document | Description |
+|----------|-------------|
+| [SS027N08LS.pdf](discretes/SS027N08LS.pdf) | SS027N08LS MOSFET |
+| [SA6.pdf](discretes/SA6.pdf) | SA6 component |
+
+## Programmer / Debug Tools (`tools/`)
+
+| Document | Description |
+|----------|-------------|
+| [CH341-datasheet.PDF](tools/CH341-datasheet.PDF) | CH341 series datasheet (Chinese) |
+| [CH341A-datasheet.pdf](tools/CH341A-datasheet.pdf) | CH341A USB programmer datasheet |
+| [CH341B-programmer.pdf](tools/CH341B-programmer.pdf) | CH341B programmer documentation |
