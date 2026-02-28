@@ -39,11 +39,13 @@ Stock OpenOCD v0.12.0 fails with `Cortex-M PARTNO 0xc30 is unrecognized`; a patc
 docs/       — Research notes from the RE process
 images/     — Annotated PCB photos
 diagrams/   — Signal path diagrams (Mermaid + Excalidraw)
+datasheets/ — Component datasheets (including Chinese-to-English MCU translations)
 ```
 
 - [docs/](docs/) — [Documentation index](docs/README.md)
 - [images/](images/) — [Image index](images/README.md)
 - [diagrams/](diagrams/) — [Diagram index](diagrams/README.md)
+- [datasheets/](datasheets/) — [Datasheet index](datasheets/README.md)
 
 ## Key Documents
 

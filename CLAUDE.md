@@ -41,12 +41,28 @@ Stock OpenOCD (v0.12.0) fails with `Cortex-M PARTNO 0xc30 is unrecognized`; a pa
 - Monitoring RS485 and UART4 signals with logic analyzer during boot
 - Understanding internal flash type (NOR vs NAND) for proper OpenOCD read commands
 
+## Datasheets
+
+The `datasheets/` directory contains component datasheets. The `datasheets/mcu-data/` subdirectory has chapter-level extracts from the FM33LC026N datasheet, many translated from Chinese to English. Key references for RE work:
+
+- `datasheets/mcu-data/debug-english.pdf` — SWD debug interface details
+- `datasheets/mcu-data/Dedicated-Programming_interface-english.pdf` — Programming interface
+- `datasheets/mcu-data/7_bus_and_storage-english.PDF` — Bus architecture, memory map, flash organization
+- `datasheets/mcu-data/11.12_registers-english.PDF` — Peripheral register definitions
+- `datasheets/mcu-data/pin-description-english.pdf` — Pin alternate functions
+- `datasheets/mcu-data/i2c-english.pdf` — I2C peripheral (relevant for EEPROM communication)
+- `datasheets/mcu-data/uart-english.pdf` — UART peripheral
+- `datasheets/mcu-data/basic-flash.pdf` — Flash memory basics
+- `datasheets/BL24C512A-PARC_C111332.pdf` — BL24C512A EEPROM datasheet
+- `datasheets/pdfcoffee.com_sh367309-ev12a-pdf-free.pdf` — SH367309 BMS ASIC datasheet
+
 ## Repository Structure
 
 ```
 images/          - Annotated photos (e.g. pcb-layout-markup.jpg)
 docs/            - Markdown notes (GitHub-flavored)
 diagrams/        - Mermaid diagrams and original Excalidraw sources
+datasheets/      - Component datasheets (Chinese-to-English MCU translations in mcu-data/)
 ```
 
 ## File Conventions
