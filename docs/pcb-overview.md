@@ -2,6 +2,12 @@ Labeled PCB v2
 ![Labeled PCB](../images/pcb-layout-markup.jpg)
 
 BMS MCU/SoC: FM33LC026N
+* There are 8 battery segments.  Voltage on each intermediate segment is accessible via the B1, B2...B7 pads on the edge of the pcb.  Each segment is 3.4V
+* The voltage across the B+ and B- pads measures 27.33
+* The SoC is run at 5V via the power regulator, FN1-05S05an
+* hello
+* 
+
 rs485 controller: 
 - 3PEAK. TP8485E
 - CA-IS3721HS
@@ -78,3 +84,4 @@ SDA is on pin 22  (PB4/SEG3/ATIM_CH1)
 ### LED light
 
 led is on pin 30 (PB12(WKUP3)/ATIM_ETR/FOUT1)
+

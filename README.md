@@ -4,14 +4,14 @@ Hardware reverse engineering project for the GoldenMate BMS (Battery Management 
 
 ## Target Hardware
 
-| Component | Part | Notes |
-|-----------|------|-------|
-| MCU | FM33LC026N | Fudan Micro, ARM Cortex-M0 (ARMv6M), Thumb mode |
-| BMS ASIC | SH367309U | |
-| EEPROM | BL24C512A | I2C, MCU pins PB3/SCL and PB4/SDA |
-| RS485 Isolator | CA-IS3721HS | |
-| RS485 Transceiver | 3PEAK TP8485E | |
-| Power | AIPULNION FN1-05S05an, XLSEMI XL7015E1 | |
+| Component         | Part                                   | Notes                                                                                                                              |
+| ----------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| MCU               | FM33LC026N                             | Fudan Micro, ARM Cortex-M0 (ARMv6M), Thumb mode                                                                                    |
+| BMS ASIC          | SH367309U                              |                                                                                                                                    |
+| EEPROM            | BL24C512A                              | I2C, MCU pins PB3/SCL and PB4/SDA                                                                                                  |
+| RS485 Isolator    | CA-IS3721HS                            |                                                                                                                                    |
+| RS485 Transceiver | 3PEAK TP8485E                          | This appears to used for the debugging port. I'm unable to connect with via the external connector using rs-485 signaling protocol |
+| Power             | AIPULNION FN1-05S05an, XLSEMI XL7015E1 |                                                                                                                                    |
 
 ## Debugging Setup
 
