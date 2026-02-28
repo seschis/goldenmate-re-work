@@ -66,7 +66,7 @@ datasheets/ — Component datasheets (including Chinese-to-English MCU translati
 
 ## License
 
-Documentation, analysis notes, diagrams, and images in this repository are licensed under [CC-BY-4.0](LICENSE). Any code, scripts, or tools are licensed under [MIT](LICENSE-CODE).
+Documentation, analysis notes, diagrams, and images in this repository are licensed under [CC-BY-NC-4.0](LICENSE). Any code, scripts, or tools are licensed under [MIT](LICENSE-CODE).
 
 Datasheets in `datasheets/` are the property of their respective manufacturers and are included for reference purposes only. See [NOTICE.md](NOTICE.md) for full attribution and legal details.
 

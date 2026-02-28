@@ -10,7 +10,7 @@ This work is conducted under the interoperability provisions of applicable law, 
 
 This repository uses a dual-license structure:
 
-- **Documentation, analysis, diagrams, and images** are licensed under the [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](LICENSE).
+- **Documentation, analysis, diagrams, and images** are licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC-BY-NC-4.0)](LICENSE).
 - **Code, scripts, and tools** (if present) are licensed under the [MIT License](LICENSE-CODE).
 
 ## Third-Party Content
