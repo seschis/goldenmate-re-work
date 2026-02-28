@@ -65,6 +65,8 @@ diagrams/        - Mermaid diagrams and original Excalidraw sources
 datasheets/      - Component datasheets organized by board function (mcu/, bms-asic/, eeprom/, power/, interface/, discretes/, tools/)
 ```
 
+Firmware memory dumps (flash, EEPROM, OTP) are maintained in a separate private repository and are not included in this public repo.
+
 ## File Conventions
 
 - Notes use **GitHub-flavored markdown** with standard `![alt](path)` image syntax

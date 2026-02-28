@@ -7,3 +7,5 @@ Research notes from the GoldenMate BMS reverse engineering process.
 - [ghidra-analysis.md](ghidra-analysis.md) — Firmware binary analysis notes (boot sequence, interrupt handlers)
 - [reading-flash.md](reading-flash.md) — Flash/OTP memory dump observations
 - [arm-dev-tools.md](arm-dev-tools.md) — ARM development and debugging tool links
+
+> **Note:** Firmware memory dumps (flash, EEPROM, OTP) are stored in a separate private repository and are not included here.

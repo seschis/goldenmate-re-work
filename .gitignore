@@ -5,7 +5,6 @@
 *.swp
 
 # Firmware and memory dumps (copyrighted; keep in private repo)
-memory-dumps/
 *.bin
 *.hex
 *.elf
