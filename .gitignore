@@ -1,2 +1,24 @@
+# macOS
 .DS_Store
+
+# Editor swap files
 *.swp
+
+# Firmware and memory dumps (copyrighted; keep in private repo)
+memory-dumps/
+*.bin
+*.hex
+*.elf
+*.srec
+
+# Ghidra project files (may contain embedded firmware)
+*.gzf
+*.gpr
+*.rep/
+*.lock
+
+# OpenOCD temp files
+*.cfg.bak
+
+# Private repo template (not for public repo)
+private-repo-README.md
